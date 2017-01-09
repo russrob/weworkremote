@@ -37,6 +37,7 @@ gem 'toastr-rails'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem "paperclip", "~> 5.0.0"
+gem 'geocoder'
 
 
 group :development, :test do

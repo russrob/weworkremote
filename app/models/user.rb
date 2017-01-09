@@ -5,7 +5,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable,
          :omniauthable
 
-         has_many:rooms
+         has_many :rooms
+         has_many  :reservations 
+
          
          def self.from_omniauth(auth)
 			user = User.where(:email => auth.info.email).first
